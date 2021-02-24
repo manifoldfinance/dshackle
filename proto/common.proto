@@ -1,6 +1,6 @@
 syntax = "proto3";
 package emerald;
-option java_package = "io.emeraldpay.api.proto";
+option java_package = "finance.manifold.api.proto";
 
 message Chain {
     ChainRef type = 1;
@@ -9,21 +9,21 @@ message Chain {
 enum ChainRef {
     CHAIN_UNSPECIFIED = 0;
 
-    CHAIN_BITCOIN = 1;
-    CHAIN_GRIN = 2;
+//   CHAIN_BITCOIN = 1;
+//    CHAIN_GRIN = 2;
 
-    CHAIN_ETHEREUM = 100;
-    CHAIN_ETHEREUM_CLASSIC = 101;
+    CHAIN_ETHEREUM = 1;
+//    CHAIN_ETHEREUM_CLASSIC = 101;
 
     // Sidechains and state channels
-    CHAIN_LIGHTNING = 1001;
+  //  CHAIN_LIGHTNING = 1001;
 
     // Testnets
-    CHAIN_MORDEN = 10001;
-    CHAIN_KOVAN = 10002;
-    CHAIN_TESTNET_BITCOIN = 10003;
-    CHAIN_FLOONET = 10004;
-    CHAIN_GOERLI = 10005;
+//    CHAIN_MORDEN = 10001;
+  //  CHAIN_KOVAN = 10002;
+    //CHAIN_TESTNET_BITCOIN = 10003;
+  //  CHAIN_FLOONET = 10004;
+  //  CHAIN_GOERLI = 10005;
 
     // Non-standard starts from 50000
 }
